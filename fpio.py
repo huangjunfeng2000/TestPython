@@ -6,6 +6,7 @@ import os
 
 from transfor import *
 from ReadFile import *
+gFilePath = ''
 
 def getReadStart(filename):
     return 0
@@ -96,10 +97,11 @@ def translatefile2(filename):
 def travsedir(path):
 	import os
 	files=os.listdir(path)
+    gFilePath = path
 	for strfile in files:
 		print ('%s' % strfile)
-		if (os.path.isfile(strfile)):
-			(root, extension) = os.path.splitext(strfile)
+		if (os.path.isfile(path + strfile)):
+#			(root, extension) = os.path.splitext(strfile)
 			translatefile(strfile)
 
 def writefile(path):
