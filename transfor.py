@@ -48,11 +48,11 @@ if __name__ == '__main__':
     data = 'aAbB'
     hexv = Bin2Hex(data)
     binv = Hex2Bin(hexv)
-    print 'Hex2Bin: %s : %s' % (data, hexv)
-    print 'Bin2Hex: %s : %s' % (hexv, binv)
+    print ('Hex2Bin: %s : %s' % (data, hexv))
+    print ('Bin2Hex: %s : %s' % (hexv, binv))
     iVal = 1024
     strVal = Int2Str36(iVal)
     iVal2 = Str2Int(strVal)
-    print 'Int2Str: %s : %s' % (iVal, strVal)
-    print 'Str2Int: %s : %s' % (strVal, iVal2)
+    print ('Int2Str: %s : %s' % (iVal, strVal))
+    print ('Str2Int: %s : %s' % (strVal, iVal2))
 

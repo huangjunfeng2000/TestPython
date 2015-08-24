@@ -15,10 +15,13 @@ class ReadFile(object):
     def readvaluepos(self, iPos, iSize):
         self.fp.seek(iPos)
         return self.readvalue(iSize)
-
+        
+    def filesize(self):
+        return os.path.getsize(filename)
+				
 import sys
 if __name__== '__main__':
     fFile = 'c:\\mvstats3.txt'
     obj = ReadFile(fFile)
-    print '%s' % obj.readvalue(10)
-    print '%s' % obj.readvaluepos(100, 10)
+    print ('%s' % obj.readvalue(10))
+    print ('%s' % obj.readvaluepos(100, 10))
